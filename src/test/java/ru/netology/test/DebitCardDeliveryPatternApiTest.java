@@ -36,7 +36,7 @@ public class DebitCardDeliveryPatternApiTest {
         form.$("[data-test-id=login] input").setValue(registeredUser.getLogin());
         form.$("[data-test-id=password] input").setValue(registeredUser.getPassword());
         form.$("[data-test-id='action-login']").click();
-        $$(".heading").find(exactText("Личный кабине")).should(visible);
+        $$(".heading").find(exactText("Личный кабинет")).should(visible);
     }
 
     @Test
@@ -47,7 +47,7 @@ public class DebitCardDeliveryPatternApiTest {
         form.$("[data-test-id=login] input").setValue(notRegisteredUser.getLogin());
         form.$("[data-test-id=password] input").setValue(notRegisteredUser.getPassword());
         form.$("[data-test-id='action-login']").click();
-        $(byText("Неверно указан логин или парол")).shouldBe(visible, Duration.ofSeconds(5));
+        $(byText("Неверно указан логин или пароль")).shouldBe(visible, Duration.ofSeconds(5));
     }
 
     @Test
@@ -58,7 +58,7 @@ public class DebitCardDeliveryPatternApiTest {
         form.$("[data-test-id=login] input").setValue(blockedUser.getLogin());
         form.$("[data-test-id=password] input").setValue(blockedUser.getPassword());
         form.$("[data-test-id='action-login']").click();
-        $(byText("Пользователь заблокирова")).shouldBe(visible, Duration.ofSeconds(5));
+        $(byText("Пользователь заблокирован")).shouldBe(visible, Duration.ofSeconds(5));
       }
 
     @Test
@@ -70,7 +70,7 @@ public class DebitCardDeliveryPatternApiTest {
         form.$("[data-test-id=login] input").setValue(wrongLogin);
         form.$("[data-test-id=password] input").setValue(registeredUser.getPassword());
         form.$("[data-test-id='action-login']").click();
-        $(byText("Неверно указан логин или парол")).shouldBe(visible, Duration.ofSeconds(5));
+        $(byText("Неверно указан логин или пароль")).shouldBe(visible, Duration.ofSeconds(5));
     }
 
     @Test
@@ -82,6 +82,6 @@ public class DebitCardDeliveryPatternApiTest {
         form.$("[data-test-id=login] input").setValue(registeredUser.getLogin());
         form.$("[data-test-id=password] input").setValue(wrongPassword);
         form.$("[data-test-id='action-login']").click();
-        $(byText("Неверно указан логин или паро")).shouldBe(visible, Duration.ofSeconds(5));
+        $(byText("Неверно указан логин или пароль")).shouldBe(visible, Duration.ofSeconds(5));
     }
 }
