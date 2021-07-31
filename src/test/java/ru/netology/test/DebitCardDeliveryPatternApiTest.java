@@ -82,6 +82,6 @@ public class DebitCardDeliveryPatternApiTest {
         form.$("[data-test-id=login] input").setValue(registeredUser.getLogin());
         form.$("[data-test-id=password] input").setValue(wrongPassword);
         form.$("[data-test-id='action-login']").click();
-        $(byText("Неверно указан логин или парол")).shouldBe(visible, Duration.ofSeconds(5));
+        $(byText("Неверно указан логин или паро")).shouldBe(visible, Duration.ofSeconds(5));
     }
 }
