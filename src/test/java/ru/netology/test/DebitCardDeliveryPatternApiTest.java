@@ -14,10 +14,9 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.withText;
+
 import static com.codeborne.selenide.Selenide.*;
-import static ru.netology.data.DataGenerator.Registration.getRegisteredUser;
-import static ru.netology.data.DataGenerator.Registration.getUser;
+import static ru.netology.data.DataGenerator.Registration.*;
 import static ru.netology.data.DataGenerator.getLogin;
 import static ru.netology.data.DataGenerator.getPassword;
 

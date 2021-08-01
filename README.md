@@ -1,4 +1,4 @@
-<h1>Закончилась квота на AppVeyor</h1>
+[![Java CI with Gradle](https://github.com/Perepadin/DebitCardDeliveryPatternAPI/actions/workflows/gradle.yml/badge.svg?event=push)](https://github.com/Perepadin/DebitCardDeliveryPatternAPI/actions/workflows/gradle.yml)
 
 Время, затраченное на ручное тестирование (минут): примерно 60
 
