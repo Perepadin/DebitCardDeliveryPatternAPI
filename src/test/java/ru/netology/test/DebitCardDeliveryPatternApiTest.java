@@ -35,7 +35,7 @@ public class DebitCardDeliveryPatternApiTest {
         form.$("[data-test-id=login] input").setValue(registeredUser.getLogin());
         form.$("[data-test-id=password] input").setValue(registeredUser.getPassword());
         form.$("[data-test-id='action-login']").click();
-        $$(".heading").find(exactText("Личный кабинет")).should(visible);
+        $$(".heading").find(exactText("Личный кабине")).should(visible);
     }
 
     @Test
